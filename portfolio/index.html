@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskruthi | AI & Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Sanskruthi, a B.Tech Artificial Intelligence and Data Science student at REVA University. Exploring machine learning, neural networks, and data analytics.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Mouse Cursor Effect Glow -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>Sanskruthi<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu-container">
+                <a href="#hero" class="nav-link active" id="nav-link-home">Home</a>
+                <a href="#about" class="nav-link" id="nav-link-about">About</a>
+                <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+                <a href="#playground" class="nav-link" id="nav-link-playground">AI Playground</a>
+                <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+                <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+                <a href="#" class="btn btn-outline btn-resume" id="resume-download-btn">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Particle Canvas Background -->
+    <section id="hero" class="hero-section">
+        <canvas id="neural-canvas" class="hero-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" id="hero-status-badge">
+                    <span class="badge-dot"></span> Available for Research & Internships
+                </div>
+                <h1 class="hero-title" id="hero-main-title">
+                    Hi, I'm <span class="gradient-text">Sanskruthi</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Pursuing B.Tech in <span class="typing-text" id="typing-target"></span><span class="typing-cursor">|</span>
+                </h2>
+                <p class="hero-description" id="hero-description-text">
+                    An aspiring Artificial Intelligence & Data Science Engineer studying at <strong>REVA University</strong>. Passionate about building intelligent systems, training neural networks, and extracting meaning from complex data.
+                </p>
+                <div class="hero-actions">
+                    <a href="#playground" class="btn btn-primary" id="hero-btn-playground">Launch AI Playground</a>
+                    <a href="#projects" class="btn btn-secondary" id="hero-btn-projects">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="cyber-frame">
+                    <div class="cyber-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="cyber-console" id="cyber-console-logs">
+                        <div class="console-line"><span class="line-tag">[SYS]</span> Initializing Portfolio.js ...</div>
+                        <div class="console-line"><span class="line-tag">[ENV]</span> REVA University Labs Online</div>
+                        <div class="console-line"><span class="line-tag">[AI]</span> Neural network layers: Loaded</div>
+                        <div class="console-line"><span class="line-tag">[MODEL]</span> Accuracy: 98.42% | Loss: 0.041</div>
+                        <div class="console-line blink-line"><span class="line-tag">&gt;</span> ready_to_build_solutions_</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" id="scroll-down-indicator" aria-label="Scroll Down">
+            <span class="mouse-icon">
+                <span class="mouse-wheel"></span>
+            </span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">01. Background</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="header-bar"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hello! I am Sanskruthi, a tech enthusiast deeply fascinated by the intersection of computational logic and human-like intelligence. I am currently pursuing my <strong>Bachelor of Technology in Artificial Intelligence and Data Science</strong> at <strong>REVA University</strong>.
+                    </p>
+                    <p>
+                        My academic journey has equipped me with solid foundations in statistical analysis, mathematical modeling, and machine learning architectures. I enjoy translating complex raw data into actionable insights and designing neural networks that can adapt and solve real-world problems.
+                    </p>
+                    <p>
+                        Here are some of the areas I focus on:
+                    </p>
+                    <ul class="focus-list">
+                        <li>Machine Learning & Deep Learning</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Data Mining & Predictive Modeling</li>
+                        <li>Statistical Data Visualization</li>
+                        <li>Database Architecture & Optimization</li>
+                        <li>Reinforcement Learning Basics</li>
+                    </ul>
+                </div>
+                
+                <div class="about-timeline-wrapper">
+                    <h3 class="timeline-title">Education Timeline</h3>
+                    <div class="timeline" id="education-timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-content">
+                                <h4>B.Tech in Artificial Intelligence & Data Science</h4>
+                                <p class="institution">REVA University</p>
+                                <p class="timeline-desc">Focussing on advanced data structures, statistical analysis, machine learning algorithms, deep learning structures, and big data technologies. Maintaining a stellar academic record.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022 - 2024</div>
+                            <div class="timeline-content">
+                                <h4>Pre-University College (Science & Math)</h4>
+                                <p class="institution">Karnataka Board</p>
+                                <p class="timeline-desc">Specialized in Physics, Chemistry, Mathematics, and Computer Science. Built early programming foundations in Python and C++.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">02. Expertise</span>
+                <h2 class="section-title">Technical Skillset</h2>
+                <div class="header-bar"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                            <path d="M16 18L22 12L16 6" />
+                            <path d="M8 6L2 12L8 18" />
+                            <path d="M12 4L12 20" />
+                        </svg>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span>90%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span><span>85%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>R Programming</span><span>70%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+                            <path d="M12 6V12L16 14" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Supervised/Unsupervised ML</span><span>85%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Neural Networks (DL)</span><span>80%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>TensorFlow / PyTorch</span><span>75%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Scikit-Learn</span><span>85%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                            <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                        </svg>
+                    </div>
+                    <h3>Data Science & Analytics</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Analysis (Pandas/NumPy)</span><span>90%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Visualization</span><span>85%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Feature Engineering</span><span>80%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Tableau / Power BI</span><span>75%</span></div>
+                            <div class="skill-progress"><div class="progress-bar" data-progress="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Playground Section -->
+    <section id="playground" class="playground-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">03. Interactive Lab</span>
+                <h2 class="section-title">AI & ML Playground</h2>
+                <div class="header-bar"></div>
+            </div>
+            
+            <div class="playground-intro">
+                <p>Interact directly with Machine Learning algorithms! Click on the coordinate space below to add data points, and see how the model calculates regression parameters or clustering centroids instantly on the client side.</p>
+            </div>
+
+            <div class="playground-container">
+                <!-- Control Panel -->
+                <div class="playground-controls" id="playground-controls-card">
+                    <h3>Model Settings</h3>
+                    
+                    <div class="control-group">
+                        <label for="algorithm-select">Choose Algorithm:</label>
+                        <select id="algorithm-select" class="custom-select">
+                            <option value="linear-regression">Linear Regression (Gradient Descent)</option>
+                            <option value="k-means">K-Means Clustering</option>
+                        </select>
+                    </div>
+
+                    <!-- Dynamic controls based on choice -->
+                    <div id="regression-controls" class="algo-controls active">
+                        <div class="control-group">
+                            <label for="learning-rate-slider">Learning Rate: <span id="lr-val">0.05</span></label>
+                            <input type="range" id="learning-rate-slider" min="0.01" max="0.3" step="0.01" value="0.05" class="custom-slider">
+                        </div>
+                        <div class="algo-math">
+                            <p class="math-title">Regression Equation:</p>
+                            <code class="math-display" id="math-formula">y = 0.00x + 0.00</code>
+                            <p class="math-desc">Fits a straight line minimizing the sum of squared residuals using gradient descent.</p>
+                        </div>
+                    </div>
+
+                    <div id="kmeans-controls" class="algo-controls">
+                        <div class="control-group">
+                            <label for="clusters-slider">Centroids (k): <span id="k-val">3</span></label>
+                            <input type="range" id="clusters-slider" min="2" max="5" step="1" value="3" class="custom-slider">
+                        </div>
+                        <div class="algo-math">
+                            <p class="math-title">K-Means Objective:</p>
+                            <p class="math-desc">Groups points into <i>k</i> clusters where each point belongs to the cluster with the nearest mean centroid.</p>
+                            <div class="centroid-legend" id="centroid-legend-container">
+                                <!-- Dynamic colors -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="clear-playground-btn" class="btn btn-outline">Clear Points</button>
+                        <button id="preset-playground-btn" class="btn btn-secondary">Load Sample Data</button>
+                    </div>
+
+                    <div class="playground-status" id="playground-status-info">
+                        Status: Waiting for points. Click inside the canvas to add data.
+                    </div>
+                </div>
+
+                <!-- Canvas Board -->
+                <div class="playground-board-wrapper">
+                    <canvas id="playground-canvas" width="600" height="400"></canvas>
+                    <div class="canvas-instructions">
+                        <span>Click inside to plot points (X, Y)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">04. Selected Work</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="header-bar"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" id="project-card-1">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="icon-svg">
+                                    <path d="M22 19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V5C2 3.9 2.9 3 4 3H9L11 5H20C21.1 5 22 5.9 22 7V19Z" />
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" class="project-link-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Neural Net Digit Classifier</h3>
+                        <p class="project-description">
+                            A custom Multi-Layer Perceptron built from scratch in Python (using NumPy) to recognize handwritten digits. Implements forward propagation, backpropagation, and stochastic gradient descent without advanced framework libraries.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                            <span>Matplotlib</span>
+                            <span>MNIST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" id="project-card-2">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="icon-svg">
+                                    <path d="M22 19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V5C2 3.9 2.9 3 4 3H9L11 5H20C21.1 5 22 5.9 22 7V19Z" />
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" class="project-link-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Academic Success Predictor</h3>
+                        <p class="project-description">
+                            A predictive analysis project modeling student academic success rates. Features advanced exploratory data analysis, class imbalance handling, and comparison of Random Forest, XGBoost, and Logistic Regression models.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>Seaborn</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" id="project-card-3">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="icon-svg">
+                                    <path d="M22 19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V5C2 3.9 2.9 3 4 3H9L11 5H20C21.1 5 22 5.9 22 7V19Z" />
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" class="project-link-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Smart Syllabus NLP Agent</h3>
+                        <p class="project-description">
+                            A semantic NLP application using embedding similarity to help students ask conversational questions about their university course syllabus. Uses TF-IDF cosine similarity scoring and a lightweight search interface.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>Scikit-Learn</span>
+                            <span>HTML5/JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">05. Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="header-bar"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-panel" id="contact-info-panel">
+                    <h3>Let's Collaborate</h3>
+                    <p>I am always looking to collaborate on interesting projects, research, and internships in the fields of Artificial Intelligence, Data Engineering, and Machine Learning.</p>
+                    <p>Whether you have a project in mind, a job opportunity, or just want to talk tech, feel free to drop a message!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:sanskruthi@example.com" id="contact-email-link">sanskruthi@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Bengaluru, Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" id="social-link-github" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" id="social-link-linkedin" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <form id="contact-form" class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" name="email" required placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" name="subject" required placeholder="How can I help you?">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="6" required placeholder="Write your message details..."></textarea>
+                        </div>
+                        <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block">Send Message</button>
+                        <div class="form-message-status" id="form-status-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p class="copyright-text">
+                Designed & Built by <span class="footer-highlight">Sanskruthi</span> © 2026.
+            </p>
+            <p class="footer-subtext">
+                Pursuing B.Tech AI & DS at REVA University
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
